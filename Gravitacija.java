@@ -2,10 +2,15 @@ import java.util.Scanner;
 
 public class Gravitacija {
     public static void main(String args[]) {
-        System.out.println("OIS can go fuck itself");
-        //zivjo from tilenl
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.println("Muricas fuck ye");
+    }
+    
+    //spremenljivke potrebne za izracun gravitacijskega pospeska
+    private static double C = 6.674e-11;
+    private static double M = 5.972e24;
+    private static double r = 6.371e6;
+    
+    //nadmorskaVisina mora biti podana v metrih!
+    public static double gravitacijskiPospesek(double nadmorskaVisina) {
+        return (C * M) / ((r + nadmorskaVisina) * (r + nadmorskaVisina));
     }
 }
