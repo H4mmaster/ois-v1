@@ -14,4 +14,12 @@ public class Gravitacija {
     public static double gravitacijskiPospesek(double visina) {
         return (C * M) / ((r + visina) * (r + visina));
     }
+    
+    
+    public static double izpisNadmorskeVisineInPospeska(double visina){
+        double pospesek = gravitacijskiPospesek(visina * 1000.0);
+        
+        System.out.printf("%dkm %d", visina, pospesek);
+        
+    }
 }
