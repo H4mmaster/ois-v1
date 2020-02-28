@@ -6,4 +6,12 @@ public class Gravitacija {
         
         System.out.println("Muricas fuck ye");
     }
+    
+    
+    public static double izpisNadmorskeVisineInPospeska(double nadmorskaVisina){
+        double pospesek = gravitacijskiPospesek(nadmorskaVisina * 1000.0);
+        
+        System.out.printf("%dkm %d", nadmorskaVisina, pospesek);
+        
+    }
 }
