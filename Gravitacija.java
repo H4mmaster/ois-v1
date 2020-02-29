@@ -1,8 +1,8 @@
 public class Gravitacija {
     public static void main(String args[]) {
-        int visina = Integer.parseInt(args[0]);
+        double visina = Double.parseDouble(args[0]);
         
-        System.out.println(gravitacijskiPospesek);
+        izpisNadmorskeVisineInPospeska(visina);
     }
     
     //spremenljivke potrebne za izracun gravitacijskega pospeska!
@@ -16,10 +16,10 @@ public class Gravitacija {
     }
     
     
-    public static double izpisNadmorskeVisineInPospeska(double visina){
+    public static void izpisNadmorskeVisineInPospeska(double visina){
         double pospesek = gravitacijskiPospesek(visina * 1000.0);
         
-        System.out.printf("%dkm %d", visina, pospesek);
+        System.out.printf("%fkm %f\n", visina, pospesek);
         
     }
 }
