@@ -19,7 +19,7 @@ public class Gravitacija {
     public static void izpisNadmorskeVisineInPospeska(double visina){
         double pospesek = gravitacijskiPospesek(visina * 1000.0);
         
-        System.out.printf("Na nadmorski višini %fm je gravitacijski pospešek %fm/s^2\n", visina, pospesek);
+        System.out.printf("Na nadmorski višini %fkm je gravitacijski pospešek %fm/s^2\n", visina, pospesek);
         
     }
 }
